@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Sten Sax Påse</title>
+</head>
+<body>
+    <header>
+        <h1>STEN SAX PÅSE</h1>
+        <h2 id="how-to">INSTRUKTIONER</h2>
+        <div id="instructions">
+            <p>
+                Välj Sten, Sax eller Påse med hjälp av symbolerna.
+                Datorns val visas till höger.
+                <br>Sten slår Sax, Sax slår Påse och Påse slår Sten.
+                <br>Först till 3 poäng vinner!
+            </p>
+        </div>
+    </header>
+    <div id="info-container">
+        <form> <!-- döljs efter submit -->
+            <label for="name-input">Ditt namn:</label>
+            <input type="text" id="name-input" required><br>
+            <button>Börja!</button>
+        </form>
+        <!--poängvisningen blir synlig efter form submit-->
+        <div class="score-display hide">
+            <h2>POÄNG</h2>
+        </div>
+        <div class="score-display hide soft-line"></div>
+        <div class="score-display hide">
+            <article>
+                <h3 id="player-name"></h3>
+                <h3 id="player-score"></h3>
+            </article>
+            <article>
+                <h3>Dator</h3>
+                <h3 id="computer-score"></h3>
+            </article>
+        </div>
+    </div>
+
+    <div id="game-container" class="hide">
+        <!-- spelarens val -->
+        <div>
+            <figure class="player-options">
+                <img src="./images/rock.png" alt="Tryck här för att välja sten">
+                <figcaption>STEN</figcaption>
+            </figure>
+            <figure class="player-options">
+                <img src="./images/scissors.png" alt="Tryck här för att välja sax">
+                <figcaption>SAX</figcaption>
+            </figure>
+            <figure class="player-options">
+                <img src="./images/paper.png" alt="Tryck här för att välja påse">
+                <figcaption>PÅSE</figcaption>
+            </figure>
+        </div>
+        <!-- datorns val  -->
+        <div>
+            <figure class="computer-choice"> 
+                <img src="./images/question-mark.png" alt="Datorns val visas här">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+    </div>
+    <div id="game-finished" class="hide">
+            <!-- Vinnaren presenteras... -->
+        <button id="restart">Nytt spel!</button>
+    </div>
+    
+</body>
+</html>

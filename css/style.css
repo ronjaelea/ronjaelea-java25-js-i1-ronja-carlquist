@@ -1,0 +1,104 @@
+body * {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: hsl(15, 90%, 95%);
+}
+
+    .accordion-control {
+        color: coral;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .accordion-control:hover {
+        color: orange;
+    }
+
+    #instructions {
+        max-width: 550px;
+        align-self: center;
+        transition: max-height 0.2s ease;
+    }
+    
+    .accordion-panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+
+
+#info-container {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(15, 90%, 50%);
+    gap: 5px;
+}
+
+    form * {
+        margin: 5px;
+    }
+
+    .score-display {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .soft-line {
+        height: 2px;
+        width: 100%;
+        background-color: #eec;
+    }
+        
+#game-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    max-height: 200px;
+}
+
+    #game-container div {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+        figure {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            max-width: 10vw;
+        }
+        
+            #game-container img {
+                height: 100%;
+            }
+
+#game-finished {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+
+
+.hide, .hide * {
+    display: none;
+}
